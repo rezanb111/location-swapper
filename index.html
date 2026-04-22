@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- Splash Screen -->
 <div class="splash" id="splash">
     <div class="splash-inner">
         <div class="splash-logo">AR</div>
@@ -17,38 +18,40 @@
     </div>
 </div>
 
+<!-- Desktop -->
 <div class="desktop" id="desktop" style="display:none;">
-    <!-- بقیه همون قبلی، فقط آیکون‌ها رو طبق بخش بعدی عوض کن -->
-    ...
-</div>
+    <!-- Background -->
+    <div class="desktop-bg"></div>
 
-<script src="script.js"></script>
-</body>
+    <!-- Welcome text -->
+    <div class="welcome-text">
+        Be Swap Location - Amo Reza<br>
+        Welcome
+    </div>
 
-
-    <!-- آیکون‌ها -->
-    <div class="icon" style="top: 70px; left: 40px;" onclick="openWindow('vpnWindow')">
-        <div class="icon-img">
+    <!-- Big icons -->
+    <div class="icon big-icon" style="top: 130px; left: 80px;" onclick="openWindow('vpnWindow')">
+        <div class="icon-img big-icon-img">
             <img src="https://i.ibb.co/5yr5X9F/Gemini-Generated-Image-7le1ao7le1ao7le1.png" alt="Reza VPN">
         </div>
         <span>Reza VPN</span>
     </div>
 
-    <div class="icon" style="top: 190px; left: 40px;" onclick="openWindow('proxyWindow')">
-        <div class="icon-img">
+    <div class="icon big-icon" style="top: 130px; left: 280px;" onclick="openWindow('proxyWindow')">
+        <div class="icon-img big-icon-img">
             <img src="https://i.ibb.co/27w01PhN/Gemini-Generated-Image-j6h4hdj6h4hdj6h4.png" alt="Reza Proxy">
         </div>
         <span>Reza Proxy</span>
     </div>
 
-    <div class="icon" style="top: 310px; left: 40px;" onclick="openWindow('browserWindow')">
-        <div class="icon-img">
+    <div class="icon big-icon" style="top: 130px; left: 480px;" onclick="openWindow('browserWindow')">
+        <div class="icon-img big-icon-img">
             <img src="https://i.ibb.co/7JwSKRZV/Gemini-Generated-Image-bbqwxcbbqwxcbbqw.png" alt="Reza Browser">
         </div>
         <span>Reza Browser</span>
     </div>
 
-    <!-- تسک‌بار -->
+    <!-- Taskbar -->
     <div class="taskbar">
         <div class="taskbar-left">
             <div class="logo-pill">AR</div>
@@ -62,7 +65,7 @@
     </div>
 </div>
 
-<!-- پنجره VPN -->
+<!-- VPN Window -->
 <div class="window vpn-window" id="vpnWindow">
     <div class="window-header" onmousedown="startDrag(event, 'vpnWindow')">
         <div class="window-title">
@@ -102,7 +105,7 @@
                 <label>Location:</label>
                 <select id="locationSelect"></select>
 
-                <button id="connectBtn" class="primary-btn" onclick="toggleVpn()">
+                <button id="connectBtn" class="primary-btn disconnected" onclick="toggleVpn()">
                     Connect
                 </button>
 
@@ -132,7 +135,7 @@
     </div>
 </div>
 
-<!-- پنجره Proxy -->
+<!-- Proxy Window -->
 <div class="window proxy-window" id="proxyWindow">
     <div class="window-header" onmousedown="startDrag(event, 'proxyWindow')">
         <div class="window-title">
@@ -174,7 +177,7 @@
     </div>
 </div>
 
-<!-- پنجره Browser -->
+<!-- Browser Window -->
 <div class="window browser-window" id="browserWindow">
     <div class="window-header" onmousedown="startDrag(event, 'browserWindow')">
         <div class="window-title">
@@ -198,10 +201,13 @@
             </div>
         </div>
         <div class="address-bar">
-            <input type="text" id="urlInput" placeholder="Enter URL (e.g. https://example.com)">
+            <input type="text" id="urlInput" placeholder="Enter URL or search...">
             <button onclick="loadPage()">Go</button>
         </div>
-        <iframe id="browserFrame" src="https://example.com"></iframe>
+        <div class="browser-loading">
+            <div class="browser-loading-bar" id="browserLoading"></div>
+        </div>
+        <iframe id="browserFrame" src="https://www.google.com"></iframe>
     </div>
 </div>
 
