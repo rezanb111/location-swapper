@@ -13,7 +13,60 @@ html, body {
     color: #e5e7eb;
 }
 
-/* دسکتاپ */
+/* Splash */
+.splash {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at top, #0ea5e9, #020617);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+.splash-inner {
+    text-align: center;
+    color: #e5e7eb;
+}
+.splash-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 999px;
+    margin: 0 auto 14px;
+    background: radial-gradient(circle at top, #38bdf8, #1d4ed8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 800;
+    color: #020617;
+    box-shadow: 0 0 30px rgba(56,189,248,1);
+}
+.splash-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.splash-sub {
+    font-size: 12px;
+    color: #cbd5f5;
+    margin-bottom: 16px;
+}
+.splash-bar-wrap {
+    width: 220px;
+    height: 6px;
+    border-radius: 999px;
+    background: rgba(15,23,42,0.8);
+    margin: 0 auto;
+    overflow: hidden;
+}
+.splash-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #22c55e, #eab308, #ef4444);
+    transition: width 0.08s linear;
+}
+
+/* Desktop */
 .desktop {
     position: relative;
     width: 100%;
@@ -21,7 +74,7 @@ html, body {
     overflow: hidden;
 }
 
-/* بک‌گراند اصلی */
+/* Background */
 .desktop-bg {
     position: absolute;
     inset: 0;
@@ -41,7 +94,7 @@ html, body {
     filter: blur(1px);
 }
 
-/* متن خوش‌آمد */
+/* Welcome text */
 .welcome-text {
     position: absolute;
     bottom: 80px;
@@ -53,10 +106,9 @@ html, body {
     text-shadow: 0 0 30px rgba(15,23,42,0.9);
 }
 
-/* آیکون‌ها */
+/* Icons */
 .icon {
     position: absolute;
-    width: 90px;
     text-align: center;
     color: #e5e7eb;
     cursor: pointer;
@@ -67,8 +119,6 @@ html, body {
     filter: drop-shadow(0 0 12px rgba(96,165,250,0.9));
 }
 .icon-img {
-    width: 64px;
-    height: 64px;
     margin: 0 auto 6px;
     border-radius: 18px;
     padding: 4px;
@@ -84,11 +134,21 @@ html, body {
     object-fit: cover;
 }
 .icon span {
-    font-size: 12px;
+    font-size: 13px;
     text-shadow: 0 0 6px rgba(15,23,42,0.9);
 }
 
-/* تسک‌بار */
+/* Big icons */
+.big-icon {
+    width: 160px;
+}
+.big-icon-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 28px;
+}
+
+/* Taskbar */
 .taskbar {
     position: absolute;
     left: 0;
@@ -134,7 +194,7 @@ html, body {
     box-shadow: 0 0 18px rgba(56,189,248,0.9);
 }
 
-/* پنجره‌ها */
+/* Windows */
 .window {
     position: absolute;
     top: 80px;
@@ -156,7 +216,7 @@ html, body {
         0 28px 70px rgba(15,23,42,1);
 }
 
-/* هدر پنجره */
+/* Window header */
 .window-header {
     display: flex;
     align-items: center;
@@ -188,7 +248,7 @@ html, body {
     padding: 14px 16px 16px;
 }
 
-/* برند بالای پنجره */
+/* Brand top */
 .window-top-brand {
     display: flex;
     align-items: center;
@@ -249,26 +309,34 @@ html, body {
     color: #e5e7eb;
     font-size: 12px;
 }
+
+/* VPN button states */
 .primary-btn {
     width: 100%;
     padding: 9px 0;
     border-radius: 999px;
     border: none;
-    background: radial-gradient(circle at top, #38bdf8, #1d4ed8);
-    color: #0b1120;
     font-weight: 700;
     font-size: 13px;
     cursor: pointer;
-    box-shadow: 0 0 18px rgba(56,189,248,0.9);
     margin-bottom: 14px;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+.primary-btn.connected {
+    background: radial-gradient(circle at top, #22c55e, #15803d);
+    box-shadow: 0 0 20px rgba(34,197,94,0.9);
+    color: #022c22;
+}
+.primary-btn.disconnected {
+    background: radial-gradient(circle at top, #ef4444, #991b1b);
+    box-shadow: 0 0 20px rgba(248,113,113,0.9);
+    color: #450a0a;
 }
 .primary-btn:hover {
     transform: translateY(-1px);
-    box-shadow: 0 0 24px rgba(56,189,248,1);
 }
 
-/* موج VPN */
+/* VPN wave */
 .vpn-wave {
     position: relative;
     height: 80px;
@@ -363,6 +431,7 @@ html, body {
 /* Browser */
 .browser-body {
     padding: 0 0 10px;
+    position: relative;
 }
 .browser-top {
     display: flex;
@@ -416,6 +485,24 @@ html, body {
     font-size: 12px;
     cursor: pointer;
 }
+
+/* Browser loading bar */
+.browser-loading {
+    position: absolute;
+    top: 44px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: rgba(15,23,42,0.9);
+    overflow: hidden;
+}
+.browser-loading-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #38bdf8, #a855f7, #ec4899);
+    transition: width 0.2s ease;
+}
+
 iframe {
     width: 100%;
     height: 420px;
@@ -423,7 +510,7 @@ iframe {
     background: #0f172a;
 }
 
-/* انیمیشن‌ها */
+/* Animations */
 @keyframes windowIn {
     from {
         opacity: 0;
