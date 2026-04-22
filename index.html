@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>Amo Reza Desktop VPN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="desktop" id="desktop">
+        <div class="taskbar">
+            <div class="taskbar-left">
+                <div class="start-btn">⊞</div>
+            </div>
+            <div class="taskbar-center">
+                <span>Amo Reza Virtual Desktop</span>
+            </div>
+            <div class="taskbar-right">
+                <span id="clock"></span>
+            </div>
+        </div>
+
+        <div class="welcome-text">
+            Be Swap Location - Amo Reza<br>
+            Welcome
+        </div>
+
+        <!-- آیکون‌ها روی دسکتاپ -->
+        <div class="icon" style="top: 60px; left: 40px;" onclick="openBrowser('chrome')">
+            <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/brand-chrome.svg" alt="Chrome">
+            <span>Chrome</span>
+        </div>
+
+        <div class="icon" style="top: 160px; left: 40px;" onclick="openBrowser('firefox')">
+            <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/brand-firefox.svg" alt="Firefox">
+            <span>Firefox</span>
+        </div>
+
+        <div class="icon" style="top: 260px; left: 40px;" onclick="openBrowser('edge')">
+            <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/brand-edge.svg" alt="Edge">
+            <span>Edge</span>
+        </div>
+
+        <div class="icon" style="top: 360px; left: 40px;" onclick="openVpn()">
+            <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/shield-lock.svg" alt="VPN">
+            <span>Amo Reza VPN</span>
+        </div>
+    </div>
+
+    <!-- پنجره وی‌پی‌ان -->
+    <div class="window vpn-window" id="vpnWindow">
+        <div class="window-header" onmousedown="startDrag(event, 'vpnWindow')">
+            <div class="window-title">
+                <span>VPN - Amo Reza Secure Network</span>
+            </div>
+            <div class="window-controls">
+                <button class="min-btn" onclick="minimizeWindow('vpnWindow')">–</button>
+                <button class="close-btn" onclick="closeVpn()">×</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="vpn-top">
+                <div class="status">
+                    Status: <span id="vpnStatus">Disconnected</span>
+                </div>
+                <div class="spinner" id="vpnSpinner"></div>
+            </div>
+
+            <label for="locationSelect">Select Location:</label>
+            <select id="locationSelect"></select>
+
+            <button id="connectBtn" onclick="toggleVpn()">Connect</button>
+        </div>
+    </div>
+
+    <!-- پنجره مرورگر -->
+    <div class="window browser-window" id="browserWindow">
+        <div class="window-header" onmousedown="startDrag(event, 'browserWindow')">
+            <div class="window-title">
+                <span id="browserTitle">Browser</span>
+            </div>
+            <div class="window-controls">
+                <button class="min-btn" onclick="minimizeWindow('browserWindow')">–</button>
+                <button class="close-btn" onclick="closeBrowser()">×</button>
+            </div>
+        </div>
+        <div class="window-body browser-body">
+            <div class="address-bar">
+                <input type="text" id="urlInput" placeholder="Enter URL (e.g. https://example.com)">
+                <button onclick="loadPage()">Go</button>
+            </div>
+            <iframe id="browserFrame" src="https://example.com"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
