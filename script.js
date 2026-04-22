@@ -1,4 +1,20 @@
-// ساعت تسک‌بار
+// Splash screen
+const splash = document.getElementById('splash');
+const desktop = document.getElementById('desktop');
+const splashBar = document.getElementById('splashBar');
+
+let splashProgress = 0;
+const splashTimer = setInterval(() => {
+    splashProgress += 4;
+    if (splashBar) splashBar.style.width = splashProgress + '%';
+    if (splashProgress >= 100) {
+        clearInterval(splashTimer);
+        splash.style.display = 'none';
+        desktop.style.display = 'block';
+    }
+}, 80);
+
+// Clock
 function updateClock() {
     const el = document.getElementById('clock');
     const now = new Date();
@@ -9,7 +25,7 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
-// لوکیشن‌ها با پرچم
+// Locations with flags
 const baseLocations = [
     "🇩🇪 Germany - Frankfurt",
     "🇩🇪 Germany - Berlin",
@@ -104,6 +120,7 @@ function toggleVpn() {
         connectBtn.disabled = true;
         connectBtn.textContent = 'Connecting...';
         vpnWave.classList.add('active');
+        connectBtn.classList.remove('connected', 'disconnected');
 
         setTimeout(() => {
             vpnConnected = true;
@@ -111,11 +128,14 @@ function toggleVpn() {
             vpnStatus.textContent = `Connected (${selected})`;
             connectBtn.disabled = false;
             connectBtn.textContent = 'Disconnect';
+            connectBtn.classList.add('connected');
         }, 1600);
     } else {
         vpnConnected = false;
         vpnStatus.textContent = 'Disconnected';
         connectBtn.textContent = 'Connect';
+        connectBtn.classList.remove('connected');
+        connectBtn.classList.add('disconnected');
         vpnWave.classList.remove('active');
     }
 }
@@ -146,26 +166,51 @@ function runProxyPing() {
 // Browser
 const frame = document.getElementById('browserFrame');
 const urlInput = document.getElementById('urlInput');
+const browserLoading = document.getElementById('browserLoading');
+
+function normalizeUrlOrSearch(text) {
+    const t = text.trim();
+    if (!t) return null;
+
+    const looksLikeUrl = t.includes('.') && !t.includes(' ');
+    if (looksLikeUrl) {
+        if (t.startsWith('http://') || t.startsWith('https://')) return t;
+        return 'https://' + t;
+    }
+    return 'https://www.google.com/search?q=' + encodeURIComponent(t);
+}
 
 function loadPage() {
-    let url = urlInput.value.trim();
-    if (!url) return;
-    if (!url.startsWith('http://') && !url.startsWith('https://')) {
-        url = 'https://' + url;
-    }
-    frame.src = url;
-}
-function browserBack() {
-    frame.contentWindow.history.back();
-}
-function browserForward() {
-    frame.contentWindow.history.forward();
-}
-function browserRefresh() {
-    frame.contentWindow.location.reload();
+    const target = normalizeUrlOrSearch(urlInput.value);
+    if (!target) return;
+    frame.src = target;
+    if (browserLoading) browserLoading.style.width = '60%';
 }
 
-// مدیریت پنجره‌ها
+urlInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        loadPage();
+    }
+});
+
+frame.addEventListener('load', () => {
+    if (browserLoading) browserLoading.style.width = '100%';
+    setTimeout(() => {
+        if (browserLoading) browserLoading.style.width = '0%';
+    }, 300);
+});
+
+function browserBack() {
+    try { frame.contentWindow.history.back(); } catch {}
+}
+function browserForward() {
+    try { frame.contentWindow.history.forward(); } catch {}
+}
+function browserRefresh() {
+    try { frame.contentWindow.location.reload(); } catch {}
+}
+
+// Window management
 let topZ = 20;
 function openWindow(id) {
     const win = document.getElementById(id);
@@ -187,7 +232,7 @@ function bringToFront(win) {
     win.classList.add('active');
 }
 
-// درگ پنجره‌ها
+// Drag windows
 let dragData = {
     isDragging: false,
     offsetX: 0,
