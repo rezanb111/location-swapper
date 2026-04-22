@@ -5,72 +5,43 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-body, html {
+html, body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: #000;
+    background: #020617;
+    color: #e5e7eb;
 }
 
+/* دسکتاپ */
 .desktop {
+    position: relative;
     width: 100%;
     height: 100vh;
-    background: radial-gradient(circle at top left, #1d4ed8 0, #020617 45%, #000 100%);
-    position: relative;
-    color: #e5e7eb;
+    overflow: hidden;
 }
 
-/* تسک‌بار */
-.taskbar {
+/* بک‌گراند اصلی */
+.desktop-bg {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 40px;
-    background: rgba(15, 23, 42, 0.9);
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    backdrop-filter: blur(10px);
-    border-top: 1px solid rgba(148, 163, 184, 0.3);
+    inset: 0;
+    background:
+        radial-gradient(circle at top left, rgba(59,130,246,0.35), transparent 55%),
+        radial-gradient(circle at bottom right, rgba(236,72,153,0.35), transparent 55%),
+        #020617;
+}
+.desktop-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://i.ibb.co/zqPwvYb/Gemini-Generated-Image-60jw7260jw7260jw.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.22;
+    filter: blur(1px);
 }
 
-.taskbar-left, .taskbar-center, .taskbar-right {
-    display: flex;
-    align-items: center;
-}
-
-.taskbar-left {
-    flex: 0 0 auto;
-}
-
-.taskbar-center {
-    flex: 1;
-    justify-content: center;
-    font-size: 12px;
-    color: #9ca3af;
-}
-
-.taskbar-right {
-    flex: 0 0 auto;
-    font-size: 12px;
-    color: #e5e7eb;
-}
-
-.start-btn {
-    width: 26px;
-    height: 26px;
-    border-radius: 4px;
-    background: rgba(15, 118, 110, 0.9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: default;
-    color: #e5e7eb;
-    font-weight: 700;
-}
-
-/* متن بک‌گراند */
+/* متن خوش‌آمد */
 .welcome-text {
     position: absolute;
     bottom: 80px;
@@ -78,176 +49,393 @@ body, html {
     text-align: right;
     font-size: 26px;
     font-weight: 700;
-    color: rgba(255, 255, 255, 0.18);
-    text-shadow: 0 0 20px rgba(15, 23, 42, 0.9);
+    color: rgba(248, 250, 252, 0.7);
+    text-shadow: 0 0 30px rgba(15,23,42,0.9);
 }
 
 /* آیکون‌ها */
 .icon {
-    width: 80px;
+    position: absolute;
+    width: 90px;
     text-align: center;
     color: #e5e7eb;
     cursor: pointer;
-    position: absolute;
+    transition: transform 0.18s ease, filter 0.18s ease;
 }
-
-.icon img {
-    width: 48px;
-    height: 48px;
-    display: block;
-    margin: 0 auto 5px;
-    filter: drop-shadow(0 0 4px rgba(0,0,0,0.6));
+.icon:hover {
+    transform: translateY(-4px) scale(1.03);
+    filter: drop-shadow(0 0 12px rgba(96,165,250,0.9));
 }
-
+.icon-img {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 6px;
+    border-radius: 18px;
+    padding: 4px;
+    background: radial-gradient(circle at top, rgba(59,130,246,0.7), rgba(15,23,42,0.9));
+    box-shadow:
+        0 0 0 1px rgba(148,163,184,0.3),
+        0 10px 25px rgba(15,23,42,0.9);
+}
+.icon-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    object-fit: cover;
+}
 .icon span {
     font-size: 12px;
-    text-shadow: 0 0 4px rgba(0,0,0,0.8);
+    text-shadow: 0 0 6px rgba(15,23,42,0.9);
+}
+
+/* تسک‌بار */
+.taskbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    background: rgba(15,23,42,0.9);
+    backdrop-filter: blur(18px);
+    border-top: 1px solid rgba(148,163,184,0.4);
+}
+.taskbar-left, .taskbar-center, .taskbar-right {
+    display: flex;
+    align-items: center;
+}
+.taskbar-left {
+    flex: 0 0 auto;
+}
+.taskbar-center {
+    flex: 1;
+    justify-content: center;
+    font-size: 12px;
+    color: #9ca3af;
+}
+.taskbar-right {
+    flex: 0 0 auto;
+    font-size: 12px;
+    color: #e5e7eb;
+}
+.logo-pill {
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    background: radial-gradient(circle at top, #38bdf8, #1d4ed8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 13px;
+    color: #0b1120;
+    box-shadow: 0 0 18px rgba(56,189,248,0.9);
 }
 
 /* پنجره‌ها */
 .window {
     position: absolute;
     top: 80px;
-    left: 120px;
-    width: 720px;
-    background: rgba(15, 23, 42, 0.98);
-    border: 1px solid #1f2937;
-    border-radius: 8px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.7);
-    display: none;
-    color: #e5e7eb;
+    left: 140px;
+    width: 780px;
+    background: rgba(15,23,42,0.92);
+    border-radius: 20px;
+    border: 1px solid rgba(148,163,184,0.5);
+    box-shadow:
+        0 0 0 1px rgba(59,130,246,0.4),
+        0 24px 60px rgba(15,23,42,0.95);
     overflow: hidden;
+    display: none;
+    animation: windowIn 0.22s ease-out;
+}
+.window.active {
+    box-shadow:
+        0 0 0 1px rgba(59,130,246,0.9),
+        0 28px 70px rgba(15,23,42,1);
 }
 
+/* هدر پنجره */
 .window-header {
-    background: linear-gradient(to right, #020617, #111827);
-    padding: 6px 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #1f2937;
+    justify-content: space-between;
+    padding: 8px 12px;
+    background: linear-gradient(90deg, rgba(15,23,42,0.98), rgba(30,64,175,0.9));
     cursor: move;
 }
-
 .window-title span {
     font-size: 13px;
+    color: #e5e7eb;
 }
-
 .window-controls button {
     border: none;
-    padding: 2px 8px;
+    padding: 2px 9px;
     margin-left: 4px;
-    border-radius: 4px;
+    border-radius: 999px;
     cursor: pointer;
     font-size: 12px;
     color: #e5e7eb;
 }
-
 .min-btn {
-    background: #4b5563;
+    background: rgba(148,163,184,0.6);
 }
-
 .close-btn {
-    background: #b91c1c;
+    background: #ef4444;
 }
-
 .window-body {
-    padding: 14px;
+    padding: 14px 16px 16px;
 }
 
-/* وی‌پی‌ان */
-.vpn-top {
+/* برند بالای پنجره */
+.window-top-brand {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 12px;
+    gap: 10px;
+    margin-bottom: 14px;
 }
-
-.vpn-window .status {
-    font-size: 14px;
+.window-top-brand img {
+    width: 40px;
+    height: 40px;
+    border-radius: 14px;
+    object-fit: cover;
+    box-shadow: 0 0 12px rgba(59,130,246,0.8);
 }
-
-.vpn-window select {
-    width: 100%;
-    padding: 8px;
-    margin: 8px 0 16px;
-    background: #020617;
-    color: #e5e7eb;
-    border: 1px solid #1f2937;
-    border-radius: 4px;
-}
-
-.vpn-window button {
-    padding: 8px 18px;
-    background: #22c55e;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    color: #022c22;
+.brand-title {
+    font-size: 15px;
     font-weight: 600;
 }
+.brand-sub {
+    font-size: 11px;
+    color: #9ca3af;
+}
 
-/* اسپینر */
-.spinner {
-    width: 18px;
-    height: 18px;
+/* VPN */
+.vpn-status-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+.vpn-mode select {
+    background: rgba(15,23,42,0.9);
     border-radius: 999px;
-    border: 2px solid rgba(148, 163, 184, 0.4);
-    border-top-color: #22c55e;
-    animation: spin 0.8s linear infinite;
-    display: none;
+    border: 1px solid rgba(148,163,184,0.6);
+    color: #e5e7eb;
+    padding: 4px 10px;
+    font-size: 12px;
+}
+.vpn-main {
+    display: flex;
+    gap: 18px;
+}
+.vpn-left, .vpn-right {
+    flex: 1;
+}
+.vpn-left label {
+    font-size: 12px;
+    color: #9ca3af;
+}
+#locationSelect {
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    padding: 8px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(148,163,184,0.6);
+    background: rgba(15,23,42,0.9);
+    color: #e5e7eb;
+    font-size: 12px;
+}
+.primary-btn {
+    width: 100%;
+    padding: 9px 0;
+    border-radius: 999px;
+    border: none;
+    background: radial-gradient(circle at top, #38bdf8, #1d4ed8);
+    color: #0b1120;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: 0 0 18px rgba(56,189,248,0.9);
+    margin-bottom: 14px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.primary-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 24px rgba(56,189,248,1);
 }
 
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
+/* موج VPN */
+.vpn-wave {
+    position: relative;
+    height: 80px;
+    border-radius: 18px;
+    background: radial-gradient(circle at top, rgba(56,189,248,0.25), rgba(15,23,42,0.95));
+    overflow: hidden;
+}
+.vpn-wave::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: conic-gradient(from 0deg, rgba(56,189,248,0.1), rgba(129,140,248,0.3), rgba(236,72,153,0.3), rgba(56,189,248,0.1));
+    opacity: 0;
+    transform: translateY(40%);
+    transition: opacity 0.2s ease;
+}
+.vpn-wave.active::before {
+    opacity: 1;
+    animation: waveSpin 2.4s linear infinite;
 }
 
-/* مرورگر */
+/* Speed cards */
+.speed-card {
+    background: rgba(15,23,42,0.9);
+    border-radius: 14px;
+    padding: 8px 10px;
+    border: 1px solid rgba(148,163,184,0.5);
+    margin-bottom: 8px;
+}
+.speed-label {
+    font-size: 11px;
+    color: #9ca3af;
+}
+.speed-value {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+.secondary-btn {
+    padding: 7px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(148,163,184,0.7);
+    background: rgba(15,23,42,0.9);
+    color: #e5e7eb;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+.speed-bar-wrap {
+    width: 100%;
+    height: 8px;
+    border-radius: 999px;
+    background: rgba(15,23,42,0.9);
+    border: 1px solid rgba(30,64,175,0.7);
+    overflow: hidden;
+}
+.speed-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #22c55e, #eab308, #ef4444);
+    transition: width 0.8s ease;
+}
+
+/* Proxy */
+.proxy-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+.proxy-row select {
+    background: rgba(15,23,42,0.9);
+    border-radius: 999px;
+    border: 1px solid rgba(148,163,184,0.6);
+    color: #e5e7eb;
+    padding: 4px 10px;
+    font-size: 12px;
+}
+.proxy-result {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    padding: 8px 10px;
+    background: rgba(15,23,42,0.9);
+    border: 1px solid rgba(148,163,184,0.5);
+}
+
+/* Browser */
 .browser-body {
-    padding: 0;
+    padding: 0 0 10px;
 }
-
+.browser-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px 4px;
+}
+.browser-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+}
+.browser-brand img {
+    width: 26px;
+    height: 26px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(59,130,246,0.8);
+}
+.browser-controls button {
+    border-radius: 999px;
+    border: 1px solid rgba(148,163,184,0.6);
+    background: rgba(15,23,42,0.9);
+    color: #e5e7eb;
+    font-size: 11px;
+    padding: 3px 8px;
+    margin-left: 4px;
+    cursor: pointer;
+}
 .address-bar {
     display: flex;
-    padding: 8px;
-    background: #020617;
-    border-bottom: 1px solid #1f2937;
+    padding: 6px 10px 8px;
+    gap: 6px;
 }
-
 .address-bar input {
     flex: 1;
-    padding: 6px;
-    margin-right: 8px;
-    background: #020617;
+    padding: 7px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(148,163,184,0.7);
+    background: rgba(15,23,42,0.9);
     color: #e5e7eb;
-    border: 1px solid #1f2937;
-    border-radius: 4px;
-    font-size: 13px;
+    font-size: 12px;
 }
-
 .address-bar button {
-    padding: 6px 12px;
-    background: #3b82f6;
+    padding: 7px 14px;
+    border-radius: 999px;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    color: white;
+    background: radial-gradient(circle at top, #38bdf8, #1d4ed8);
+    color: #0b1120;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 12px;
+    cursor: pointer;
 }
-
 iframe {
     width: 100%;
     height: 420px;
     border: none;
-    background: white;
+    background: #0f172a;
 }
 
-/* فوکوس پنجره */
-.window.active {
-    box-shadow: 0 0 0 1px #3b82f6, 0 20px 40px rgba(0,0,0,0.8);
-    border-color: #3b82f6;
+/* انیمیشن‌ها */
+@keyframes windowIn {
+    from {
+        opacity: 0;
+        transform: scale(0.94) translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
 }
- 
+@keyframes waveSpin {
+    to {
+        transform: translateY(40%) rotate(360deg);
+    }
+}
