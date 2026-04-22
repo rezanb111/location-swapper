@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+.desktop {
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle at top left, #1d4ed8 0, #020617 45%, #000 100%);
+    position: relative;
+    color: #e5e7eb;
+}
+
+/* تسک‌بار */
+.taskbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: rgba(15, 23, 42, 0.9);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.taskbar-left, .taskbar-center, .taskbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.taskbar-left {
+    flex: 0 0 auto;
+}
+
+.taskbar-center {
+    flex: 1;
+    justify-content: center;
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.taskbar-right {
+    flex: 0 0 auto;
+    font-size: 12px;
+    color: #e5e7eb;
+}
+
+.start-btn {
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    background: rgba(15, 118, 110, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    color: #e5e7eb;
+    font-weight: 700;
+}
+
+/* متن بک‌گراند */
+.welcome-text {
+    position: absolute;
+    bottom: 80px;
+    right: 40px;
+    text-align: right;
+    font-size: 26px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.18);
+    text-shadow: 0 0 20px rgba(15, 23, 42, 0.9);
+}
+
+/* آیکون‌ها */
+.icon {
+    width: 80px;
+    text-align: center;
+    color: #e5e7eb;
+    cursor: pointer;
+    position: absolute;
+}
+
+.icon img {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: 0 auto 5px;
+    filter: drop-shadow(0 0 4px rgba(0,0,0,0.6));
+}
+
+.icon span {
+    font-size: 12px;
+    text-shadow: 0 0 4px rgba(0,0,0,0.8);
+}
+
+/* پنجره‌ها */
+.window {
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    width: 720px;
+    background: rgba(15, 23, 42, 0.98);
+    border: 1px solid #1f2937;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+    display: none;
+    color: #e5e7eb;
+    overflow: hidden;
+}
+
+.window-header {
+    background: linear-gradient(to right, #020617, #111827);
+    padding: 6px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1f2937;
+    cursor: move;
+}
+
+.window-title span {
+    font-size: 13px;
+}
+
+.window-controls button {
+    border: none;
+    padding: 2px 8px;
+    margin-left: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #e5e7eb;
+}
+
+.min-btn {
+    background: #4b5563;
+}
+
+.close-btn {
+    background: #b91c1c;
+}
+
+.window-body {
+    padding: 14px;
+}
+
+/* وی‌پی‌ان */
+.vpn-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.vpn-window .status {
+    font-size: 14px;
+}
+
+.vpn-window select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0 16px;
+    background: #020617;
+    color: #e5e7eb;
+    border: 1px solid #1f2937;
+    border-radius: 4px;
+}
+
+.vpn-window button {
+    padding: 8px 18px;
+    background: #22c55e;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #022c22;
+    font-weight: 600;
+}
+
+/* اسپینر */
+.spinner {
+    width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    border: 2px solid rgba(148, 163, 184, 0.4);
+    border-top-color: #22c55e;
+    animation: spin 0.8s linear infinite;
+    display: none;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* مرورگر */
+.browser-body {
+    padding: 0;
+}
+
+.address-bar {
+    display: flex;
+    padding: 8px;
+    background: #020617;
+    border-bottom: 1px solid #1f2937;
+}
+
+.address-bar input {
+    flex: 1;
+    padding: 6px;
+    margin-right: 8px;
+    background: #020617;
+    color: #e5e7eb;
+    border: 1px solid #1f2937;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.address-bar button {
+    padding: 6px 12px;
+    background: #3b82f6;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+iframe {
+    width: 100%;
+    height: 420px;
+    border: none;
+    background: white;
+}
+
+/* فوکوس پنجره */
+.window.active {
+    box-shadow: 0 0 0 1px #3b82f6, 0 20px 40px rgba(0,0,0,0.8);
+    border-color: #3b82f6;
+}
