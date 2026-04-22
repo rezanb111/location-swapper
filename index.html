@@ -1,97 +1,200 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Amo Reza Desktop VPN</title>
+    <title>AmoReza OS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="desktop" id="desktop">
-        <div class="taskbar">
-            <div class="taskbar-left">
-                <div class="start-btn">⊞</div>
-            </div>
-            <div class="taskbar-center">
-                <span>Amo Reza Virtual Desktop</span>
-            </div>
-            <div class="taskbar-right">
-                <span id="clock"></span>
-            </div>
-        </div>
+<div class="desktop" id="desktop">
+    <!-- بک‌گراند اصلی -->
+    <div class="desktop-bg"></div>
 
-        <div class="welcome-text">
-            Be Swap Location - Amo Reza<br>
-            Welcome
-        </div>
-
-        <!-- آیکون‌ها روی دسکتاپ -->
-        <div class="icon" style="top: 60px; left: 40px;" onclick="openBrowser('chrome')">
-            <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/brand-chrome.svg" alt="Chrome">
-            <span>Chrome</span>
-        </div>
-
-        <div class="icon" style="top: 160px; left: 40px;" onclick="openBrowser('firefox')">
-            <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/brand-firefox.svg" alt="Firefox">
-            <span>Firefox</span>
-        </div>
-
-        <div class="icon" style="top: 260px; left: 40px;" onclick="openBrowser('edge')">
-            <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/brand-edge.svg" alt="Edge">
-            <span>Edge</span>
-        </div>
-
-        <div class="icon" style="top: 360px; left: 40px;" onclick="openVpn()">
-            <img src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/shield-lock.svg" alt="VPN">
-            <span>Amo Reza VPN</span>
-        </div>
+    <!-- متن خوش‌آمد -->
+    <div class="welcome-text">
+        Be Swap Location - Amo Reza<br>
+        Welcome
     </div>
 
-    <!-- پنجره وی‌پی‌ان -->
-    <div class="window vpn-window" id="vpnWindow">
-        <div class="window-header" onmousedown="startDrag(event, 'vpnWindow')">
-            <div class="window-title">
-                <span>VPN - Amo Reza Secure Network</span>
-            </div>
-            <div class="window-controls">
-                <button class="min-btn" onclick="minimizeWindow('vpnWindow')">–</button>
-                <button class="close-btn" onclick="closeVpn()">×</button>
+    <!-- آیکون‌ها -->
+    <div class="icon" style="top: 70px; left: 40px;" onclick="openWindow('vpnWindow')">
+        <div class="icon-img">
+            <img src="https://i.ibb.co/5yr5X9F/Gemini-Generated-Image-7le1ao7le1ao7le1.png" alt="Reza VPN">
+        </div>
+        <span>Reza VPN</span>
+    </div>
+
+    <div class="icon" style="top: 190px; left: 40px;" onclick="openWindow('proxyWindow')">
+        <div class="icon-img">
+            <img src="https://i.ibb.co/27w01PhN/Gemini-Generated-Image-j6h4hdj6h4hdj6h4.png" alt="Reza Proxy">
+        </div>
+        <span>Reza Proxy</span>
+    </div>
+
+    <div class="icon" style="top: 310px; left: 40px;" onclick="openWindow('browserWindow')">
+        <div class="icon-img">
+            <img src="https://i.ibb.co/7JwSKRZV/Gemini-Generated-Image-bbqwxcbbqwxcbbqw.png" alt="Reza Browser">
+        </div>
+        <span>Reza Browser</span>
+    </div>
+
+    <!-- تسک‌بار -->
+    <div class="taskbar">
+        <div class="taskbar-left">
+            <div class="logo-pill">AR</div>
+        </div>
+        <div class="taskbar-center">
+            <span>AmoReza OS — Neon Virtual Desktop</span>
+        </div>
+        <div class="taskbar-right">
+            <span id="clock"></span>
+        </div>
+    </div>
+</div>
+
+<!-- پنجره VPN -->
+<div class="window vpn-window" id="vpnWindow">
+    <div class="window-header" onmousedown="startDrag(event, 'vpnWindow')">
+        <div class="window-title">
+            <span>Reza VPN — Location Swapper</span>
+        </div>
+        <div class="window-controls">
+            <button class="min-btn" onclick="minimizeWindow('vpnWindow')">–</button>
+            <button class="close-btn" onclick="closeWindow('vpnWindow')">×</button>
+        </div>
+    </div>
+    <div class="window-body">
+        <div class="window-top-brand">
+            <img src="https://i.ibb.co/5yr5X9F/Gemini-Generated-Image-7le1ao7le1ao7le1.png" alt="Reza VPN">
+            <div>
+                <div class="brand-title">Reza VPN</div>
+                <div class="brand-sub">Secure • Fast • Location Swap</div>
             </div>
         </div>
-        <div class="window-body">
-            <div class="vpn-top">
-                <div class="status">
-                    Status: <span id="vpnStatus">Disconnected</span>
+
+        <div class="vpn-status-row">
+            <div class="vpn-status-text">
+                Status: <span id="vpnStatus">Disconnected</span>
+            </div>
+            <div class="vpn-mode">
+                Mode:
+                <select id="vpnMode">
+                    <option>Auto</option>
+                    <option>Gaming</option>
+                    <option>Streaming</option>
+                    <option>Secure</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="vpn-main">
+            <div class="vpn-left">
+                <label>Location:</label>
+                <select id="locationSelect"></select>
+
+                <button id="connectBtn" class="primary-btn" onclick="toggleVpn()">
+                    Connect
+                </button>
+
+                <div class="vpn-wave" id="vpnWave"></div>
+            </div>
+            <div class="vpn-right">
+                <div class="speed-card">
+                    <div class="speed-label">Ping</div>
+                    <div class="speed-value" id="pingValue">— ms</div>
                 </div>
-                <div class="spinner" id="vpnSpinner"></div>
+                <div class="speed-card">
+                    <div class="speed-label">Download</div>
+                    <div class="speed-value" id="downValue">— Mbps</div>
+                </div>
+                <div class="speed-card">
+                    <div class="speed-label">Upload</div>
+                    <div class="speed-value" id="upValue">— Mbps</div>
+                </div>
+
+                <button class="secondary-btn" onclick="runSpeedTest()">Run Speed Test</button>
+
+                <div class="speed-bar-wrap">
+                    <div class="speed-bar" id="speedBar"></div>
+                </div>
             </div>
-
-            <label for="locationSelect">Select Location:</label>
-            <select id="locationSelect"></select>
-
-            <button id="connectBtn" onclick="toggleVpn()">Connect</button>
         </div>
     </div>
+</div>
 
-    <!-- پنجره مرورگر -->
-    <div class="window browser-window" id="browserWindow">
-        <div class="window-header" onmousedown="startDrag(event, 'browserWindow')">
-            <div class="window-title">
-                <span id="browserTitle">Browser</span>
-            </div>
-            <div class="window-controls">
-                <button class="min-btn" onclick="minimizeWindow('browserWindow')">–</button>
-                <button class="close-btn" onclick="closeBrowser()">×</button>
-            </div>
+<!-- پنجره Proxy -->
+<div class="window proxy-window" id="proxyWindow">
+    <div class="window-header" onmousedown="startDrag(event, 'proxyWindow')">
+        <div class="window-title">
+            <span>Reza Proxy — Smart Routing</span>
         </div>
-        <div class="window-body browser-body">
-            <div class="address-bar">
-                <input type="text" id="urlInput" placeholder="Enter URL (e.g. https://example.com)">
-                <button onclick="loadPage()">Go</button>
-            </div>
-            <iframe id="browserFrame" src="https://example.com"></iframe>
+        <div class="window-controls">
+            <button class="min-btn" onclick="minimizeWindow('proxyWindow')">–</button>
+            <button class="close-btn" onclick="closeWindow('proxyWindow')">×</button>
         </div>
     </div>
+    <div class="window-body">
+        <div class="window-top-brand">
+            <img src="https://i.ibb.co/27w01PhN/Gemini-Generated-Image-j6h4hdj6h4hdj6h4.png" alt="Reza Proxy">
+            <div>
+                <div class="brand-title">Reza Proxy</div>
+                <div class="brand-sub">Smart • Lightweight • Auto Route</div>
+            </div>
+        </div>
 
-    <script src="script.js"></script>
+        <div class="proxy-row">
+            <div>
+                <label>Mode:</label>
+                <select id="proxyMode">
+                    <option>Auto</option>
+                    <option>Manual</option>
+                    <option>Bypass Local</option>
+                </select>
+            </div>
+            <div>
+                <label>Ping Test:</label>
+                <button class="secondary-btn" onclick="runProxyPing()">Test</button>
+            </div>
+        </div>
+
+        <div class="proxy-result">
+            <span>Last Ping:</span>
+            <span id="proxyPing">— ms</span>
+        </div>
+    </div>
+</div>
+
+<!-- پنجره Browser -->
+<div class="window browser-window" id="browserWindow">
+    <div class="window-header" onmousedown="startDrag(event, 'browserWindow')">
+        <div class="window-title">
+            <span>AmoReza Browser</span>
+        </div>
+        <div class="window-controls">
+            <button class="min-btn" onclick="minimizeWindow('browserWindow')">–</button>
+            <button class="close-btn" onclick="closeWindow('browserWindow')">×</button>
+        </div>
+    </div>
+    <div class="window-body browser-body">
+        <div class="browser-top">
+            <div class="browser-brand">
+                <img src="https://i.ibb.co/7JwSKRZV/Gemini-Generated-Image-bbqwxcbbqwxcbbqw.png" alt="Reza Browser">
+                <span>Reza Browser</span>
+            </div>
+            <div class="browser-controls">
+                <button onclick="browserBack()">⟵</button>
+                <button onclick="browserForward()">⟶</button>
+                <button onclick="browserRefresh()">⟳</button>
+            </div>
+        </div>
+        <div class="address-bar">
+            <input type="text" id="urlInput" placeholder="Enter URL (e.g. https://example.com)">
+            <button onclick="loadPage()">Go</button>
+        </div>
+        <iframe id="browserFrame" src="https://example.com"></iframe>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
-</html>  
+</html>
