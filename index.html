@@ -6,15 +6,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="desktop" id="desktop">
-    <!-- بک‌گراند اصلی -->
-    <div class="desktop-bg"></div>
-
-    <!-- متن خوش‌آمد -->
-    <div class="welcome-text">
-        Be Swap Location - Amo Reza<br>
-        Welcome
+<div class="splash" id="splash">
+    <div class="splash-inner">
+        <div class="splash-logo">AR</div>
+        <div class="splash-title">AmoReza OS</div>
+        <div class="splash-sub">Neon Virtual Desktop • Location Swapper</div>
+        <div class="splash-bar-wrap">
+            <div class="splash-bar" id="splashBar"></div>
+        </div>
     </div>
+</div>
+
+<div class="desktop" id="desktop" style="display:none;">
+    <!-- بقیه همون قبلی، فقط آیکون‌ها رو طبق بخش بعدی عوض کن -->
+    ...
+</div>
+
+<script src="script.js"></script>
+</body>
+
 
     <!-- آیکون‌ها -->
     <div class="icon" style="top: 70px; left: 40px;" onclick="openWindow('vpnWindow')">
