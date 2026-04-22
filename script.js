@@ -1,165 +1,109 @@
-// ---------- ساعت تسک‌بار ----------
+// ساعت تسک‌بار
 function updateClock() {
-    const clock = document.getElementById('clock');
+    const el = document.getElementById('clock');
     const now = new Date();
     const h = now.getHours().toString().padStart(2, '0');
     const m = now.getMinutes().toString().padStart(2, '0');
-    clock.textContent = `${h}:${m}`;
+    el.textContent = `${h}:${m}`;
 }
 setInterval(updateClock, 1000);
 updateClock();
 
-// ---------- لیست لوکیشن‌ها (واقعی + تکمیل تا ۲۰۰) ----------
+// لوکیشن‌ها با پرچم
 const baseLocations = [
-    "Germany - Frankfurt",
-    "Germany - Berlin",
-    "Germany - Munich",
-    "Germany - Hamburg",
-    "Netherlands - Amsterdam",
-    "France - Paris",
-    "France - Marseille",
-    "France - Lyon",
-    "United Kingdom - London",
-    "United Kingdom - Manchester",
-    "United Kingdom - Glasgow",
-    "United Kingdom - Birmingham",
-    "Switzerland - Zurich",
-    "Switzerland - Geneva",
-    "Austria - Vienna",
-    "Italy - Milan",
-    "Italy - Rome",
-    "Italy - Naples",
-    "Spain - Madrid",
-    "Spain - Barcelona",
-    "Spain - Valencia",
-    "Portugal - Lisbon",
-    "Portugal - Porto",
-    "Belgium - Brussels",
-    "Sweden - Stockholm",
-    "Norway - Oslo",
-    "Denmark - Copenhagen",
-    "Finland - Helsinki",
-    "Poland - Warsaw",
-    "Czech Republic - Prague",
-    "Hungary - Budapest",
-    "Russia - Moscow",
-    "Russia - St. Petersburg",
-    "Turkey - Istanbul",
-    "Turkey - Ankara",
-    "Greece - Athens",
-    "Romania - Bucharest",
-    "Bulgaria - Sofia",
-    "Serbia - Belgrade",
-    "Croatia - Zagreb",
-    "USA - New York",
-    "USA - Los Angeles",
-    "USA - San Francisco",
-    "USA - Chicago",
-    "USA - Miami",
-    "USA - Dallas",
-    "USA - Seattle",
-    "USA - Atlanta",
-    "USA - Washington DC",
-    "Canada - Toronto",
-    "Canada - Montreal",
-    "Canada - Vancouver",
-    "Canada - Calgary",
-    "Mexico - Mexico City",
-    "Brazil - São Paulo",
-    "Brazil - Rio de Janeiro",
-    "Argentina - Buenos Aires",
-    "Chile - Santiago",
-    "Colombia - Bogotá",
-    "Peru - Lima",
-    "UAE - Dubai",
-    "UAE - Abu Dhabi",
-    "Qatar - Doha",
-    "Saudi Arabia - Riyadh",
-    "Saudi Arabia - Jeddah",
-    "Israel - Tel Aviv",
-    "South Africa - Johannesburg",
-    "South Africa - Cape Town",
-    "India - Mumbai",
-    "India - Delhi",
-    "India - Bangalore",
-    "India - Chennai",
-    "Pakistan - Karachi",
-    "Pakistan - Lahore",
-    "Iran - Tehran",
-    "Iran - Mashhad",
-    "Iran - Isfahan",
-    "Iran - Shiraz",
-    "China - Beijing",
-    "China - Shanghai",
-    "China - Guangzhou",
-    "Hong Kong - Central",
-    "Japan - Tokyo",
-    "Japan - Osaka",
-    "Japan - Nagoya",
-    "South Korea - Seoul",
-    "South Korea - Busan",
-    "Singapore - Singapore",
-    "Malaysia - Kuala Lumpur",
-    "Thailand - Bangkok",
-    "Vietnam - Hanoi",
-    "Vietnam - Ho Chi Minh City",
-    "Indonesia - Jakarta",
-    "Philippines - Manila",
-    "Australia - Sydney",
-    "Australia - Melbourne",
-    "Australia - Brisbane",
-    "New Zealand - Auckland"
+    "🇩🇪 Germany - Frankfurt",
+    "🇩🇪 Germany - Berlin",
+    "🇳🇱 Netherlands - Amsterdam",
+    "🇫🇷 France - Paris",
+    "🇬🇧 UK - London",
+    "🇬🇧 UK - Manchester",
+    "🇨🇭 Switzerland - Zurich",
+    "🇦🇹 Austria - Vienna",
+    "🇮🇹 Italy - Milan",
+    "🇪🇸 Spain - Madrid",
+    "🇵🇹 Portugal - Lisbon",
+    "🇧🇪 Belgium - Brussels",
+    "🇸🇪 Sweden - Stockholm",
+    "🇳🇴 Norway - Oslo",
+    "🇩🇰 Denmark - Copenhagen",
+    "🇫🇮 Finland - Helsinki",
+    "🇵🇱 Poland - Warsaw",
+    "🇨🇿 Czech - Prague",
+    "🇭🇺 Hungary - Budapest",
+    "🇷🇺 Russia - Moscow",
+    "🇹🇷 Turkey - Istanbul",
+    "🇬🇷 Greece - Athens",
+    "🇷🇴 Romania - Bucharest",
+    "🇷🇸 Serbia - Belgrade",
+    "🇺🇸 USA - New York",
+    "🇺🇸 USA - Los Angeles",
+    "🇺🇸 USA - Chicago",
+    "🇺🇸 USA - Miami",
+    "🇺🇸 USA - Seattle",
+    "🇨🇦 Canada - Toronto",
+    "🇨🇦 Canada - Vancouver",
+    "🇲🇽 Mexico - Mexico City",
+    "🇧🇷 Brazil - São Paulo",
+    "🇦🇷 Argentina - Buenos Aires",
+    "🇨🇱 Chile - Santiago",
+    "🇨🇴 Colombia - Bogotá",
+    "🇵🇪 Peru - Lima",
+    "🇦🇪 UAE - Dubai",
+    "🇶🇦 Qatar - Doha",
+    "🇸🇦 Saudi - Riyadh",
+    "🇮🇱 Israel - Tel Aviv",
+    "🇿🇦 South Africa - Johannesburg",
+    "🇮🇳 India - Mumbai",
+    "🇮🇳 India - Delhi",
+    "🇵🇰 Pakistan - Karachi",
+    "🇮🇷 Iran - Tehran",
+    "🇮🇷 Iran - Mashhad",
+    "🇨🇳 China - Beijing",
+    "🇭🇰 Hong Kong - Central",
+    "🇯🇵 Japan - Tokyo",
+    "🇰🇷 Korea - Seoul",
+    "🇸🇬 Singapore - Singapore",
+    "🇲🇾 Malaysia - Kuala Lumpur",
+    "🇹🇭 Thailand - Bangkok",
+    "🇻🇳 Vietnam - Hanoi",
+    "🇮🇩 Indonesia - Jakarta",
+    "🇦🇺 Australia - Sydney",
+    "🇳🇿 New Zealand - Auckland"
 ];
 
-// تکمیل تا ۲۰۰ لوکیشن با نودهای بهینه‌سازی‌شده
 const locations = [];
-baseLocations.forEach(loc => locations.push(loc));
-
+baseLocations.forEach(l => locations.push(l));
 let idx = 1;
 while (locations.length < 200) {
     const base = baseLocations[(idx - 1) % baseLocations.length];
-    locations.push(`${base} - Optimized Node ${idx}`);
+    locations.push(`${base} • Node ${idx}`);
     idx++;
 }
 
 const locationSelect = document.getElementById('locationSelect');
-const vpnStatus = document.getElementById('vpnStatus');
-const connectBtn = document.getElementById('connectBtn');
-const vpnSpinner = document.getElementById('vpnSpinner');
-
-let vpnConnected = false;
-
-// پر کردن دراپ‌داون لوکیشن‌ها
 locations.forEach(loc => {
-    const option = document.createElement('option');
-    option.value = loc;
-    option.textContent = loc;
-    locationSelect.appendChild(option);
+    const opt = document.createElement('option');
+    opt.value = loc;
+    opt.textContent = loc;
+    locationSelect.appendChild(opt);
 });
 
-// ---------- وی‌پی‌ان ----------
-function openVpn() {
-    const win = document.getElementById('vpnWindow');
-    win.style.display = 'block';
-    bringToFront(win);
-}
-
-function closeVpn() {
-    const win = document.getElementById('vpnWindow');
-    win.style.display = 'none';
-    vpnConnected = false;
-    vpnStatus.textContent = 'Disconnected';
-    connectBtn.textContent = 'Connect';
-    connectBtn.disabled = false;
-    vpnSpinner.style.display = 'none';
-}
+// VPN state
+let vpnConnected = false;
+const vpnStatus = document.getElementById('vpnStatus');
+const connectBtn = document.getElementById('connectBtn');
+const vpnWave = document.getElementById('vpnWave');
+const pingValue = document.getElementById('pingValue');
+const downValue = document.getElementById('downValue');
+const upValue = document.getElementById('upValue');
+const speedBar = document.getElementById('speedBar');
 
 function toggleVpn() {
     if (!vpnConnected) {
         vpnStatus.textContent = 'Connecting...';
         connectBtn.disabled = true;
         connectBtn.textContent = 'Connecting...';
-        vpnSpinner.style.display = 'inline-block';
+        vpnWave.classList.add('active');
 
         setTimeout(() => {
             vpnConnected = true;
@@ -167,46 +111,83 @@ function toggleVpn() {
             vpnStatus.textContent = `Connected (${selected})`;
             connectBtn.disabled = false;
             connectBtn.textContent = 'Disconnect';
-            vpnSpinner.style.display = 'none';
-        }, 1800);
+        }, 1600);
     } else {
         vpnConnected = false;
         vpnStatus.textContent = 'Disconnected';
         connectBtn.textContent = 'Connect';
-        vpnSpinner.style.display = 'none';
+        vpnWave.classList.remove('active');
     }
 }
 
-// ---------- مرورگر ----------
-function openBrowser(type) {
-    const browserWindow = document.getElementById('browserWindow');
-    const browserTitle = document.getElementById('browserTitle');
+function runSpeedTest() {
+    if (!vpnConnected) {
+        vpnStatus.textContent = 'Connect VPN first';
+        return;
+    }
+    const ping = Math.floor(20 + Math.random() * 60);
+    const down = (50 + Math.random() * 250).toFixed(1);
+    const up = (10 + Math.random() * 80).toFixed(1);
 
-    browserTitle.textContent = type.toUpperCase();
-    browserWindow.style.display = 'block';
-    bringToFront(browserWindow);
+    pingValue.textContent = `${ping} ms`;
+    downValue.textContent = `${down} Mbps`;
+    upValue.textContent = `${up} Mbps`;
+
+    const percent = Math.min(100, (down / 300) * 100);
+    speedBar.style.width = percent + '%';
 }
 
-function closeBrowser() {
-    const browserWindow = document.getElementById('browserWindow');
-    browserWindow.style.display = 'none';
+// Proxy
+function runProxyPing() {
+    const val = Math.floor(30 + Math.random() * 120);
+    document.getElementById('proxyPing').textContent = `${val} ms`;
 }
+
+// Browser
+const frame = document.getElementById('browserFrame');
+const urlInput = document.getElementById('urlInput');
 
 function loadPage() {
-    const urlInput = document.getElementById('urlInput');
-    const frame = document.getElementById('browserFrame');
     let url = urlInput.value.trim();
-
     if (!url) return;
-
     if (!url.startsWith('http://') && !url.startsWith('https://')) {
         url = 'https://' + url;
     }
-
     frame.src = url;
 }
+function browserBack() {
+    frame.contentWindow.history.back();
+}
+function browserForward() {
+    frame.contentWindow.history.forward();
+}
+function browserRefresh() {
+    frame.contentWindow.location.reload();
+}
 
-// ---------- درگ کردن پنجره‌ها ----------
+// مدیریت پنجره‌ها
+let topZ = 20;
+function openWindow(id) {
+    const win = document.getElementById(id);
+    win.style.display = 'block';
+    bringToFront(win);
+}
+function closeWindow(id) {
+    const win = document.getElementById(id);
+    win.style.display = 'none';
+}
+function minimizeWindow(id) {
+    const win = document.getElementById(id);
+    win.style.display = 'none';
+}
+function bringToFront(win) {
+    topZ += 1;
+    win.style.zIndex = topZ;
+    document.querySelectorAll('.window').forEach(w => w.classList.remove('active'));
+    win.classList.add('active');
+}
+
+// درگ پنجره‌ها
 let dragData = {
     isDragging: false,
     offsetX: 0,
@@ -214,30 +195,26 @@ let dragData = {
     targetId: null
 };
 
-function startDrag(e, windowId) {
-    const win = document.getElementById(windowId);
+function startDrag(e, id) {
+    const win = document.getElementById(id);
     dragData.isDragging = true;
-    dragData.targetId = windowId;
-
+    dragData.targetId = id;
     const rect = win.getBoundingClientRect();
     dragData.offsetX = e.clientX - rect.left;
     dragData.offsetY = e.clientY - rect.top;
-
     bringToFront(win);
 }
 
 document.addEventListener('mousemove', (e) => {
     if (!dragData.isDragging || !dragData.targetId) return;
     const win = document.getElementById(dragData.targetId);
+    const desktopRect = document.getElementById('desktop').getBoundingClientRect();
 
     let newLeft = e.clientX - dragData.offsetX;
     let newTop = e.clientY - dragData.offsetY;
 
-    const desktopRect = document.getElementById('desktop').getBoundingClientRect();
-
-    // محدود کردن داخل دسکتاپ
     const maxLeft = desktopRect.width - win.offsetWidth;
-    const maxTop = desktopRect.height - win.offsetHeight - 40; // بالای تسک‌بار
+    const maxTop = desktopRect.height - win.offsetHeight - 46;
 
     if (newLeft < 0) newLeft = 0;
     if (newTop < 0) newTop = 0;
@@ -252,19 +229,3 @@ document.addEventListener('mouseup', () => {
     dragData.isDragging = false;
     dragData.targetId = null;
 });
-
-// ---------- فوکوس و مینیمایز ----------
-let topZ = 10;
-
-function bringToFront(win) {
-    topZ += 1;
-    win.style.zIndex = topZ;
-
-    document.querySelectorAll('.window').forEach(w => w.classList.remove('active'));
-    win.classList.add('active');
-}
-
-function minimizeWindow(id) {
-    const win = document.getElementById(id);
-    win.style.display = 'none';
-}
