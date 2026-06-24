@@ -1,0 +1,1244 @@
+curl 'https://luckywatch.pro/watch' \
+  -H 'authority: luckywatch.pro' \
+  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'cookie: i18n_language=en; partner=544787; source=partner; hash=a38476ebdbe2bf644b88b8a546cdd45e; signed=1; newUser=1; PHPSESSID=30cq8m0qaesn0qa71n3v0scam8' \
+  -H 'referer: https://www.google.com/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: document' \
+  -H 'sec-fetch-mode: navigate' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-fetch-user: ?1' \
+  -H 'upgrade-insecure-requests: 1' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/entry.C5FSZmZw.css' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/ContestBanner.CjldQDDa.css' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/Card.PAQBrh0V.css' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/AboutCloverCoinsModal.BNk0e1Iy.css' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/Ticket.BEOCOE3Z.css' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/watch.iVQayXeS.css' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/AccordionAtom.t9xos4yr.css' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/DailyActivityBonus.DMFVvgQe.css' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/CMKNj3A3.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/DtsBHWkf.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/DI8PmBzh.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/D8lLvQJG.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/ChmaW0go.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/DcmLabxQ.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/C2H3mdrr.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/CqCgU2Uw.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/CzswSHGS.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/B3dDciVO.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/C7khifH4.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/DNm_PIF_.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/gVsmFxI3.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/CsAs0ql9.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/DDewvqQR.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/CWA2liGQ.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/C1Wiwm26.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/C4DQ14k_.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/DZ_KPAKH.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/CRrb34_1.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BboZT6Jk.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/CEuQGtZT.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BzPTsZqq.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/D7s0jCAl.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/CXy68sSw.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BwPD5xlT.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BgMdMfFk.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BFhgy7TN.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/fsX-agm_.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/B09UubrD.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/C3NQFOAa.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BqCA_dUZ.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BBAMlSAs.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/B_bNVytK.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/UuFxjRvY.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/D_J0b50S.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/x-VL25Y_.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/cZ6FpS0p.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/PkVl1w_-.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/9TkgGapu.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BEP601p3.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/DD-lmcTp.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/Bhp_3j9C.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/DWUkkhob.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BoakHOiZ.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/Ct38bhf0.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/builds/meta/2859b214-32e2-4eb4-ab0b-5f848817df82.json' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/images/user.svg' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/images/contest/clover_green.webp' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/EnBnPtYp.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/baCgqCqF.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/Dx9HRPxD.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BqW7qvuL.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/Dj022kuZ.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BkFigO_R.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/D7_1iARt.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/B5J6AIJi.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BwtSNsM6.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/Wp1A14sF.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Sofia+Sans+Condensed:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://luckywatch.pro/images/svg/bg.svg' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BqW7qvuL.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/manifest.json' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/Dx9HRPxD.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/default.JKdWNpVK.css' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://www.youtube.com/iframe_api?unixtime=1782299226667' \
+  -H 'authority: www.youtube.com' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'cookie: __Secure-3PSIDTS=sidts-CjUByojQUxIb6b8Y3KARft6Ah4ZxHGQIAlU7YZrD59RVxIzUiABwwl6ffCXfkZ2Btf5yoKAeAhAA; __Secure-3PAPISID=97vFtPupkYddIqdo/A1l4P_tHAf7dYoWem; __Secure-3PSID=g.a000-wjVWeF4vwUOweT-46i0JX6jbX1z5qakZrVr9WrLAAN236WlVRt0H-pM7E_qm8s0OKGPvwACgYKASkSARASFQHGX2MieBcxs3AoSkvANnL5b0VK-hoVAUF8yKq4e_UnTkCmTV50W6Px38D80076; VISITOR_INFO1_LIVE=iVXRt_ql8UM; VISITOR_PRIVACY_METADATA=CgJBWhIEGgAgWw%3D%3D; LOGIN_INFO=AFmmF2swRQIhAPBD11qyqGDZr_KQLbLEZ9kztC0w1NNFcrQE_LQlXfvmAiAtGP9w-XyrM10BD6CFL2GXO2lGMoHUresRz5jmyQIX9Q:QUQ3MjNmeFpPOWk1STlmdng3dWl2Z0o1UnhQRHdhUXMwU083T3hxaVY4VjRGVXpCMVI4bW52YVdCT3VVV3dxSVZpUzltYTNiaWtmMkE2YVF6bDFfTUlWbGRPOUZoOXBiQlR4Z2lLRXhsN2hsS3FVS0RlbjVMMHBicnBmeDZsenQ0RlRCNTVFTGtFdHY3Y0V4enYya0lxeVdhYjBMbDVyT2xn; __Secure-YNID=19.YT=HXMKr7gAcg_tS4_3bk7jNWLU1hiqG6UKE_Rijqf-a4JzPrnUwo3jUhVR56O-rG0e-GoHzjJyrcx0v1P1IewigtDRB186szsUOWlzrNRxtQ7uYuH5JO_N4gW87wcMclQIYObUxNMF8sxiTmVnJDZZ0MM7MU3BUxTert3N6ts7AmhZUhMVJJr5z7-eQebme3XKAnSmVM9jkMEh0qCYCcvCaWY4BzaR5sfvzqcCIfHampi0zDAU4pWD0OrYl3XSO46m4zH-G1CnnYn-OTlDDm2uRXmTi5Ptf6unS0TuzhmwV9DcPzmmkv99ZJd7d_7CRrls5JvndLe_DtYu-uhTTUc1hQ; YSC=fvNU0U3CEsM; __Secure-ROLLOUT_TOKEN=COmOton9xYjZzgEQtrGCrbGRlQMYipqR7N2flQM%3D; __Secure-3PSIDCC=AKEyXzXGye8iRjBjpPslYNNv12UXy4x_bFBj4B_NXCSDvhmlityMd1zddNfWsRGD7HTGjFqm' \
+  -H 'referer: https://luckywatch.pro/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: script' \
+  -H 'sec-fetch-mode: no-cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'x-client-data: CMCXywE=' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/as4nz8ZP.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/api/challenges/' \
+  -H 'authority: luckywatch.pro' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'cookie: i18n_language=en; partner=544787; source=partner; hash=a38476ebdbe2bf644b88b8a546cdd45e; signed=1; newUser=1; PHPSESSID=30cq8m0qaesn0qa71n3v0scam8' \
+  -H 'origin: https://luckywatch.pro' \
+  -H 'referer: https://luckywatch.pro/watch' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  --data-raw 'method=getLastActiveContestBanner' \
+  --compressed ;
+curl 'https://luckywatch.pro/api/challenges/' \
+  -H 'authority: luckywatch.pro' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'cookie: i18n_language=en; partner=544787; source=partner; hash=a38476ebdbe2bf644b88b8a546cdd45e; signed=1; newUser=1; PHPSESSID=30cq8m0qaesn0qa71n3v0scam8' \
+  -H 'origin: https://luckywatch.pro' \
+  -H 'referer: https://luckywatch.pro/watch' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  --data-raw 'method=getLastActiveContestBanner' \
+  --compressed ;
+curl 'https://luckywatch.pro/api/user/tasks/' \
+  -H 'authority: luckywatch.pro' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'cookie: i18n_language=en; partner=544787; source=partner; hash=a38476ebdbe2bf644b88b8a546cdd45e; signed=1; newUser=1; PHPSESSID=30cq8m0qaesn0qa71n3v0scam8' \
+  -H 'origin: https://luckywatch.pro' \
+  -H 'referer: https://luckywatch.pro/watch' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  --data-raw 'method=getLimits' \
+  --compressed ;
+curl 'https://luckywatch.pro/api/user/tasks/dailyBonus/' \
+  -H 'authority: luckywatch.pro' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'cookie: i18n_language=en; partner=544787; source=partner; hash=a38476ebdbe2bf644b88b8a546cdd45e; signed=1; newUser=1; PHPSESSID=30cq8m0qaesn0qa71n3v0scam8' \
+  -H 'origin: https://luckywatch.pro' \
+  -H 'referer: https://luckywatch.pro/watch' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  --data-raw 'method=getInfo' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BTEVilN4.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/DfVvgsPE.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/cU90o9JF.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/DpGP5nS5.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/DPH66DLL.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/B_c9_-1V.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/usGaLRjO.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/DwcLuAsc.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BXKQtvhJ.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BVgY3g44.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/DyTBKMIB.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/Cg85v4f3.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/Dyc4RYKS.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/TabsButtons.C1SgoviN.css' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/Boaz5yts.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/B7KjyWPW.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/DmjDB72w.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/home.v1AWlsSb.css' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/C6fobonC.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/DVUAK8fv.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/CopyToClipboard.tn0RQdqM.css' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BlMlaL9q.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/gMEh0nOH.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/5s3YyQ6y.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/InputAtom.Chhhxu65.css' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/CMKbNNpa.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/H0QlmJak.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BadgeAtom.DRu09LtT.css' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/Q42qLISu.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BZP5ND8I.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/TGtV_712.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BBXzQHMM.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/B6qVoVUb.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/CTV-7inG.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/referrals.Cf48ilzQ.css' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/C200Br1s.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/C64S9OTU.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/C77Ok8Ux.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/MsufxImM.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/DsVAd2jF.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/CKxsNQKp.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/LatestPayoutsContent.BNobO5MU.css' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/payouts.fxEymsKx.css' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/BD-WA1mR.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/u4LEJg5j.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/B0T2ZOg9.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/DIC843Pc.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer;' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/Checkbox.CVPf83W2.css' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://luckywatch.pro/_nuxt/profile.UdHKphON.css' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/watch' \
+  -H 'Origin: https://luckywatch.pro' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://www.youtube.com/s/player/06cb0078/www-widgetapi.vflset/www-widgetapi.js' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'Referer: https://luckywatch.pro/' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  --compressed ;
+curl 'https://uchecker.top/lock/' \
+  -H 'authority: uchecker.top' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'cookie: lp=1782299211' \
+  -H 'origin: https://luckywatch.pro' \
+  -H 'referer: https://luckywatch.pro/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  --data-raw 'data=onJI5%2Boo%2FpzLSjQjQQXqeg%3D%3D%3A9rsFEjsKWpmTSygBMQeCMgRGp1WopET4L8QgcWKQPSiChFbRqJwjPO0bh%2FTQc%2FFK&ch=1' \
+  --compressed ;
+curl 'https://api1.uchecker.top/lock/' \
+  -H 'authority: api1.uchecker.top' \
+  -H 'accept: */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'cookie: lp=1782299211' \
+  -H 'origin: https://luckywatch.pro' \
+  -H 'referer: https://luckywatch.pro/' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: cross-site' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  --data-raw 'data=onJI5%2Boo%2FpzLSjQjQQXqeg%3D%3D%3A9rsFEjsKWpmTSygBMQeCMgRGp1WopET4L8QgcWKQPSiChFbRqJwjPO0bh%2FTQc%2FFK&ch=1' \
+  --compressed ;
+curl 'https://luckywatch.pro/api/user/tasks/' \
+  -H 'authority: luckywatch.pro' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'content-type: application/x-www-form-urlencoded' \
+  -H 'cookie: i18n_language=en; partner=544787; source=partner; hash=a38476ebdbe2bf644b88b8a546cdd45e; signed=1; newUser=1; PHPSESSID=30cq8m0qaesn0qa71n3v0scam8' \
+  -H 'origin: https://luckywatch.pro' \
+  -H 'referer: https://luckywatch.pro/watch' \
+  -H 'sec-ch-ua: "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?1' \
+  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36' \
+  --data-raw 'method=checkIp' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed ;
+curl 'https://fonts.gstatic.com/s/sofiasanscondensed/v6/r05EGKVS5aVKd567NYXawnFKJaTtoAuLnIcIptH3eXxF.woff2' \
+  -H 'Referer;' \
+  --compressed
