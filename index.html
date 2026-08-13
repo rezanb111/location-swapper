@@ -1,216 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>AmoReza OS</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<!-- Splash Screen -->
-<div class="splash" id="splash">
-    <div class="splash-inner">
-        <div class="splash-logo">AR</div>
-        <div class="splash-title">AmoReza OS</div>
-        <div class="splash-sub">Neon Virtual Desktop • Location Swapper</div>
-        <div class="splash-bar-wrap">
-            <div class="splash-bar" id="splashBar"></div>
-        </div>
-    </div>
-</div>
+#!/usr/bin/env bash
+###############################################################################
+# نصب MystNode روی سرور روسی با روت کردن ترافیک از طریق SOCKS5 خارجی
+# سرور روسی: 193.233.246.44
+# پروکسی: socks5://bylex:bylex@147.45.77.71:1080
+###############################################################################
+set -euo pipefail
 
-<!-- Desktop -->
-<div class="desktop" id="desktop" style="display:none;">
-    <!-- Background -->
-    <div class="desktop-bg"></div>
+IP="193.233.246.44"
+DATA_DIR="$HOME/mystnode"
+WG_PORTS="52000:52050"
+UI_PORT="4449"
+PROXY="socks5://bylex:bylex@altaria.proxy.rlwy.net:58542"
 
-    <!-- Welcome text -->
-    <div class="welcome-text">
-        Be Swap Location - Amo Reza<br>
-        Welcome
-    </div>
+echo "==> شروع نصب MystNode روی $IP"
 
-    <!-- Big icons -->
-    <div class="icon big-icon" style="top: 130px; left: 80px;" onclick="openWindow('vpnWindow')">
-        <div class="icon-img big-icon-img">
-            <img src="https://i.ibb.co/5yr5X9F/Gemini-Generated-Image-7le1ao7le1ao7le1.png" alt="Reza VPN">
-        </div>
-        <span>Reza VPN</span>
-    </div>
+[[ $EUID -ne 0 ]] && echo "با root/sudo اجرا کنید" && exit 1
 
-    <div class="icon big-icon" style="top: 130px; left: 280px;" onclick="openWindow('proxyWindow')">
-        <div class="icon-img big-icon-img">
-            <img src="https://i.ibb.co/27w01PhN/Gemini-Generated-Image-j6h4hdj6h4hdj6h4.png" alt="Reza Proxy">
-        </div>
-        <span>Reza Proxy</span>
-    </div>
+# ---------------------------------------------------------------------------
+# 1) هماهنگ‌سازی ساعت
+# ---------------------------------------------------------------------------
+echo "==> هماهنگ‌سازی ساعت سیستم"
+DEBIAN_FRONTEND=noninteractive apt-get update -qq
+DEBIAN_FRONTEND=noninteractive apt-get install -y -qq chrony curl
+systemctl enable --now chrony
+timedatectl set-ntp true
 
-    <div class="icon big-icon" style="top: 130px; left: 480px;" onclick="openWindow('browserWindow')">
-        <div class="icon-img big-icon-img">
-            <img src="https://i.ibb.co/7JwSKRZV/Gemini-Generated-Image-bbqwxcbbqwxcbbqw.png" alt="Reza Browser">
-        </div>
-        <span>Reza Browser</span>
-    </div>
+# ---------------------------------------------------------------------------
+# 2) نصب Docker
+# ---------------------------------------------------------------------------
+if ! command -v docker &>/dev/null; then
+  echo "==> نصب Docker"
+  curl -fsSL https://get.docker.com | sh
+  systemctl enable --now docker
+else
+  echo "==> Docker از قبل نصب است"
+fi
 
-    <!-- Taskbar -->
-    <div class="taskbar">
-        <div class="taskbar-left">
-            <div class="logo-pill">AR</div>
-        </div>
-        <div class="taskbar-center">
-            <span>AmoReza OS — Neon Virtual Desktop</span>
-        </div>
-        <div class="taskbar-right">
-            <span id="clock"></span>
-        </div>
-    </div>
-</div>
+# ---------------------------------------------------------------------------
+# 3) تنظیم proxy برای Docker daemon
+# تمام ترافیک Docker (pull ایمیج + ترافیک داخل کانتینر) از پروکسی خارجی رد میشه
+# ---------------------------------------------------------------------------
+echo "==> تنظیم Docker proxy"
+mkdir -p /etc/systemd/system/docker.service.d
 
-<!-- VPN Window -->
-<div class="window vpn-window" id="vpnWindow">
-    <div class="window-header" onmousedown="startDrag(event, 'vpnWindow')">
-        <div class="window-title">
-            <span>Reza VPN — Location Swapper</span>
-        </div>
-        <div class="window-controls">
-            <button class="min-btn" onclick="minimizeWindow('vpnWindow')">–</button>
-            <button class="close-btn" onclick="closeWindow('vpnWindow')">×</button>
-        </div>
-    </div>
-    <div class="window-body">
-        <div class="window-top-brand">
-            <img src="https://i.ibb.co/5yr5X9F/Gemini-Generated-Image-7le1ao7le1ao7le1.png" alt="Reza VPN">
-            <div>
-                <div class="brand-title">Reza VPN</div>
-                <div class="brand-sub">Secure • Fast • Location Swap</div>
-            </div>
-        </div>
+cat > /etc/systemd/system/docker.service.d/proxy.conf << EOF
+[Service]
+Environment="HTTPS_PROXY=$PROXY"
+Environment="HTTP_PROXY=$PROXY"
+Environment="NO_PROXY=localhost,127.0.0.1,172.16.0.0/12,10.0.0.0/8"
+EOF
 
-        <div class="vpn-status-row">
-            <div class="vpn-status-text">
-                Status: <span id="vpnStatus">Disconnected</span>
-            </div>
-            <div class="vpn-mode">
-                Mode:
-                <select id="vpnMode">
-                    <option>Auto</option>
-                    <option>Gaming</option>
-                    <option>Streaming</option>
-                    <option>Secure</option>
-                </select>
-            </div>
-        </div>
+# ---------------------------------------------------------------------------
+# 4) تنظیم proxy برای داخل کانتینرها (environment variables)
+# ---------------------------------------------------------------------------
+mkdir -p /etc/docker
+cat > /etc/docker/daemon.json << EOF
+{
+  "proxies": {
+    "http-proxy": "$PROXY",
+    "https-proxy": "$PROXY",
+    "no-proxy": "localhost,127.0.0.1,172.16.0.0/12,10.0.0.0/8"
+  }
+}
+EOF
 
-        <div class="vpn-main">
-            <div class="vpn-left">
-                <label>Location:</label>
-                <select id="locationSelect"></select>
+systemctl daemon-reload
+systemctl restart docker
+sleep 3
 
-                <button id="connectBtn" class="primary-btn disconnected" onclick="toggleVpn()">
-                    Connect
-                </button>
+# ---------------------------------------------------------------------------
+# 5) تست اتصال از طریق پروکسی
+# ---------------------------------------------------------------------------
+echo "==> تست اتصال به سرورهای Mysterium از طریق پروکسی"
+if docker run --rm curlimages/curl \
+    curl -s --max-time 15 \
+    https://observer.mysterium.network/api/v1/observed/hermes 2>/dev/null | grep -q "hermes\|address\|\["; then
+  echo "==> اتصال موفق بود!"
+else
+  echo "==> هشدار: تست اتصال پاسخ واضحی نداد، ادامه می‌دهیم..."
+fi
 
-                <div class="vpn-wave" id="vpnWave"></div>
-            </div>
-            <div class="vpn-right">
-                <div class="speed-card">
-                    <div class="speed-label">Ping</div>
-                    <div class="speed-value" id="pingValue">— ms</div>
-                </div>
-                <div class="speed-card">
-                    <div class="speed-label">Download</div>
-                    <div class="speed-value" id="downValue">— Mbps</div>
-                </div>
-                <div class="speed-card">
-                    <div class="speed-label">Upload</div>
-                    <div class="speed-value" id="upValue">— Mbps</div>
-                </div>
+# ---------------------------------------------------------------------------
+# 6) IP Forwarding
+# ---------------------------------------------------------------------------
+sysctl -w net.ipv4.ip_forward=1
+grep -q '^net.ipv4.ip_forward' /etc/sysctl.conf \
+  && sed -i 's/^net.ipv4.ip_forward.*/net.ipv4.ip_forward=1/' /etc/sysctl.conf \
+  || echo 'net.ipv4.ip_forward=1' >> /etc/sysctl.conf
 
-                <button class="secondary-btn" onclick="runSpeedTest()">Run Speed Test</button>
+# ---------------------------------------------------------------------------
+# 7) پوشه داده
+# ---------------------------------------------------------------------------
+mkdir -p "$DATA_DIR"
 
-                <div class="speed-bar-wrap">
-                    <div class="speed-bar" id="speedBar"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+# ---------------------------------------------------------------------------
+# 8) فایروال
+# ---------------------------------------------------------------------------
+if command -v ufw &>/dev/null && ufw status | grep -q "Status: active"; then
+  ufw allow "$UI_PORT/tcp"
+  ufw allow 52000:52050/udp
+fi
 
-<!-- Proxy Window -->
-<div class="window proxy-window" id="proxyWindow">
-    <div class="window-header" onmousedown="startDrag(event, 'proxyWindow')">
-        <div class="window-title">
-            <span>Reza Proxy — Smart Routing</span>
-        </div>
-        <div class="window-controls">
-            <button class="min-btn" onclick="minimizeWindow('proxyWindow')">–</button>
-            <button class="close-btn" onclick="closeWindow('proxyWindow')">×</button>
-        </div>
-    </div>
-    <div class="window-body">
-        <div class="window-top-brand">
-            <img src="https://i.ibb.co/27w01PhN/Gemini-Generated-Image-j6h4hdj6h4hdj6h4.png" alt="Reza Proxy">
-            <div>
-                <div class="brand-title">Reza Proxy</div>
-                <div class="brand-sub">Smart • Lightweight • Auto Route</div>
-            </div>
-        </div>
+# ---------------------------------------------------------------------------
+# 9) دانلود ایمیج
+# ---------------------------------------------------------------------------
+echo "==> دانلود ایمیج MystNode"
+docker pull mysteriumnetwork/myst:latest
 
-        <div class="proxy-row">
-            <div>
-                <label>Mode:</label>
-                <select id="proxyMode">
-                    <option>Auto</option>
-                    <option>Manual</option>
-                    <option>Bypass Local</option>
-                </select>
-            </div>
-            <div>
-                <label>Ping Test:</label>
-                <button class="secondary-btn" onclick="runProxyPing()">Test</button>
-            </div>
-        </div>
+# ---------------------------------------------------------------------------
+# 10) اجرای نود
+# کانتینر با متغیرهای proxy اجرا میشه تا ترافیک داخلیش هم از پروکسی رد بشه
+# ---------------------------------------------------------------------------
+echo "==> اجرای نود"
+docker rm -f myst-node 2>/dev/null || true
 
-        <div class="proxy-result">
-            <span>Last Ping:</span>
-            <span id="proxyPing">— ms</span>
-        </div>
-    </div>
-</div>
+docker run -d \
+  --name myst-node \
+  --restart unless-stopped \
+  --cap-add NET_ADMIN \
+  --device=/dev/net/tun \
+  -e HTTPS_PROXY="$PROXY" \
+  -e HTTP_PROXY="$PROXY" \
+  -e https_proxy="$PROXY" \
+  -e http_proxy="$PROXY" \
+  -e NO_PROXY="localhost,127.0.0.1,172.16.0.0/12,10.0.0.0/8" \
+  -v "$DATA_DIR:/var/lib/mysterium-node" \
+  -p "$IP:$UI_PORT:4449" \
+  -p "$IP:52000-52050:52000-52050/udp" \
+  mysteriumnetwork/myst:latest \
+  service --agreed-terms-and-conditions --wireguard.listen.ports "$WG_PORTS" wireguard
 
-<!-- Browser Window -->
-<div class="window browser-window" id="browserWindow">
-    <div class="window-header" onmousedown="startDrag(event, 'browserWindow')">
-        <div class="window-title">
-            <span>AmoReza Browser</span>
-        </div>
-        <div class="window-controls">
-            <button class="min-btn" onclick="minimizeWindow('browserWindow')">–</button>
-            <button class="close-btn" onclick="closeWindow('browserWindow')">×</button>
-        </div>
-    </div>
-    <div class="window-body browser-body">
-        <div class="browser-top">
-            <div class="browser-brand">
-                <img src="https://i.ibb.co/7JwSKRZV/Gemini-Generated-Image-bbqwxcbbqwxcbbqw.png" alt="Reza Browser">
-                <span>Reza Browser</span>
-            </div>
-            <div class="browser-controls">
-                <button onclick="browserBack()">⟵</button>
-                <button onclick="browserForward()">⟶</button>
-                <button onclick="browserRefresh()">⟳</button>
-            </div>
-        </div>
-        <div class="address-bar">
-            <input type="text" id="urlInput" placeholder="Enter URL or search...">
-            <button onclick="loadPage()">Go</button>
-        </div>
-        <div class="browser-loading">
-            <div class="browser-loading-bar" id="browserLoading"></div>
-        </div>
-        <iframe id="browserFrame" src="https://www.google.com"></iframe>
-    </div>
-</div>
+sleep 8
+docker ps --filter "name=myst-node"
 
-<script src="script.js"></script>
-</body>
-</html> 
+echo ""
+echo "=================================================================="
+echo " نصب تمام شد!"
+echo " ۳۰ ثانیه صبر کنید بعد پنل رو باز کنید:"
+echo " پنل: http://$IP:$UI_PORT"
+echo ""
+echo " مراحل بعدی در پنل:"
+echo "   1) Register identity (پرداخت ~1 USDC روی Polygon)"
+echo "   2) Settings > Mystnodes.com Integrations"
+echo "      API key: GKRVndEnkWBXLgKOLzvDkYZ8xtnwHMSIePnlPW1k"
+echo ""
+echo " چک لاگ: docker logs -f myst-node"
+echo "=================================================================="
